@@ -1,0 +1,21 @@
+<h1 class="d-flex justify-content-center">Lista de profesores</h1>
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Patronous</th>
+      <th>Date Of Birth</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let profesor of profesores">
+      <th>{{profesor.name}}</th>
+      <th>{{profesor.patronus}}</th>
+      <th>{{profesor.dateOfBirth}}</th>
+      <th><img src="{{profesor.image}}" alt="imagen" class="responsive"/></th>
+    </tr>
+  </tbody>
+
+</table>

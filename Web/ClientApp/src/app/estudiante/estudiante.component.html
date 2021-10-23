@@ -1,0 +1,21 @@
+<h1 class="d-flex justify-content-center">Listado de estudiantes</h1>
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Patronous</th>
+      <th>Date Of Birth</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let estudiante of estudiantes">
+      <th>{{estudiante.name}}</th>
+      <th>{{estudiante.patronus}}</th>
+      <th>{{estudiante.dateOfBirth}}</th>
+      <th><img src="{{estudiante.image}}" alt="imagen" class="responsive" /></th>
+    </tr>
+  </tbody>
+
+</table>
